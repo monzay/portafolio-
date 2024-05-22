@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex flex-col min-h-[100dvh]">
+    <header class="px-4 lg:px-6 h-14 flex items-center">
+      <a class="flex items-center justify-center" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+        </svg>
+        <span class="sr-only">Acme Inc</span>
+      </a>
+      <nav class="ml-auto flex gap-4 sm:gap-6">
+        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+          Projects
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+          About
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main class="grid gap-6 flex-1 px-4 md:px-6">
+      <div class="portada mx-auto max-w-3xl grid items-center gap-4 pt-12 lg:pt-24">
+        <div class="space-y-2">
+          <p class="text-sm font-medium text-gray-600 dark:text-gray-400">hola me llamo</p>
+          <h1 id="texto_nombre" class=" text-3xl font-bold tracking-tighter sm:text-5xl">Joel Martinez</h1>
+          <p class="text-base max-w-[600px] text-gray-500/relaxed md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400/relaxed">
+             soy un programador dedicado a resolver problemas sobre mis clientes 
+          </p>
+        </div>
+        <img
+        
+          src="https://i.pinimg.com/736x/77/10/72/771072b199a321192669e3fb5bcbb142.jpg"
+          width="200"
+          height="200"
+          alt="Avatar"
+          class="img-portada rounded-full"
+          style="aspect-ratio:200/200;object-fit:cover"
+        />
+      </div>
+      <div class=" mx-auto max-w-5xl grid items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-[3.5rem] 2xl:text-[4rem]">tecnologias  </h2>
+          <div class="grid gap-2 min-[400px]:grid-cols-2">
+            <ul>
+              <li>JavaScript</li>
+              <li>python</li>
+              <li>node</li>
+              <li>sqlite</li>
+              <li>react</li>
+            </ul>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-[3.5rem] 2xl:text-[4rem]">Sobre mi</h2>
+          <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400/relaxed">
+            Soy Joel Martínez, un apasionado desarrollador de software con más de dos años de experiencia. Desde los 15 años, me he dedicado a aprender y perfeccionar mis habilidades en tecnologías de vanguardia, lo que me ha permitido crear soluciones innovadoras y eficientes.
+            Mi interés por la tecnología y la programación surgió como un hobby que rápidamente se convirtió en una vocación. He trabajado en varios proyectos personales y colaborativos, donde he profundizado en lenguajes como Python, JavaScript y otros frameworks relevantes en la industria.
+            Mi objetivo es seguir desarrollando mis habilidades en programación y hacer contribuciones significativas al campo del desarrollo de software.
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto max-w-5xl grid items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+        <div class="space-y-4">
+          <h2 id="texto_mis_proyectos"  class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-[3.5rem] 2xl:text-[4rem]">
+            Mis proyectos
+          </h2>
+          <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400/relaxed">
+          estos son los proyectos que mas me gustaron crear
+          </p>
+        </div>
+        <div class="mx-auto w-full max-w-5xl grid items-center gap-6">
+          <div class="proyecto rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img  class="img-proyecto"  src="/src/img/img1.png" alt="">
+          </div>
+          <div class="proyecto rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="img-proyecto"  src="/src/img/img3.png" alt="">
+          </div>
+          <div class="proyecto rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="img-proyecto"  src="/src/img/img2.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+      <div class="mx-auto max-w-5xl grid items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-[3.5rem] 2xl:text/[4rem]">Contact Me</h2>
+          <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            If you'd like to get in touch, you can email me at
+            <a class="underline underline-offset-2 hover:underline underline-offset-2" href="#">
+              johndoe@example.com
+            </a>
+            or connect with me on LinkedIn.
+          </p>
+        </div>
+        <div class="mx-auto max-w-sm space-y-4">
+          <form class="grid gap-4">
+            <div class="grid gap-1.5">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="name"
+              >
+                nombre
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="name"
+                required=""
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="grid gap-1.5">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                type="email"
+                id="email"
+                required=""
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="grid gap-1.5">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="message"
+              >
+                Mensaje
+              </label>
+              <textarea
+                class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[100px]"
+                id="message"
+                required=""
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+            <button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <p class="text-xs text-gray-500 dark:text-gray-400">© 2024 Acme Inc. All rights reserved.</p>
+      <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+        <a class="text-xs hover:underline underline-offset-4" href="#">
+          Terms of Service
+        </a>
+        <a class="text-xs hover:underline underline-offset-4" href="#">
+          Privacy
+        </a>
+      </nav>
+    </footer>
+  </div>
+  <script>
+
+const sitioWeb = {
+
+  español: {
+    nombreEmpresa: "Acme Inc",
+    menu: ["Proyectos", "Acerca de", "Contacto"],
+    tituloPrincipal: "¡Hola! Me llamo",
+    nombre: "Joel Martinez",
+    descripcion: "Soy un programador dedicado a resolver problemas para mis clientes.",
+    avatar: "Avatar", // Supongo que aquí iría la ruta de la imagen del avatar
+    habilidades: [
+      { nombre: "Web", porcentaje: "80%" },
+      { nombre: "Rust", porcentaje: "70%" },
+      { nombre: "Java", porcentaje: "60%" },
+      { nombre: "Kotlin", porcentaje: "50%" },
+      { nombre: "Linux", porcentaje: "90%" }
+    ],
+    sobreMi: "Soy Joel Martínez, un apasionado desarrollador de software con más de dos años de experiencia. Desde los 15 años, me he dedicado a aprender y perfeccionar mis habilidades en tecnologías de vanguardia, lo que me ha permitido crear soluciones innovadoras y eficientes. Mi interés por la tecnología y la programación surgió como un hobby que rápidamente se convirtió en una vocación. He trabajado en varios proyectos personales y colaborativos, donde he profundizado en lenguajes como Python, JavaScript y otros frameworks relevantes en la industria. Mi objetivo es seguir desarrollando mis habilidades en programación y hacer contribuciones significativas al campo del desarrollo de software.",
+    proyectos: "Estos son los proyectos que más me gustaron crear...",
+    informacionContacto: {
+      email: "johndoe@example.com",
+      linkedIn: "URL de LinkedIn"
+    },
+    derechos: "© 2024 Acme Inc. Todos los derechos reservados.",
+    enlacesLegales: {
+      terminosDeServicio: "Términos de Servicio",
+      privacidad: "Política de Privacidad"
+    }
+  },
+
+  inglés: {
+    nombreEmpresa: "Acme Inc",
+    menu: ["Projects", "About", "Contact"],
+    tituloPrincipal: "Hello! My name is",
+    nombre: "Joel Martinez",
+    descripcion: "I'm a programmer dedicated to solving problems for my clients.",
+    avatar: "Avatar", // Supongo que aquí iría la ruta de la imagen del avatar
+    habilidades: [
+      { nombre: "Web", porcentaje: "80%" },
+      { nombre: "Rust", porcentaje: "70%" },
+      { nombre: "Java", porcentaje: "60%" },
+      { nombre: "Kotlin", porcentaje: "50%" },
+      { nombre: "Linux", porcentaje: "90%" }
+    ],
+    sobreMi: "I'm Joel Martinez, a passionate software developer with over two years of experience. Since the age of 15, I've dedicated myself to learning and perfecting my skills in cutting-edge technologies, allowing me to create innovative and efficient solutions. My interest in technology and programming arose as a hobby that quickly turned into a vocation. I've worked on several personal and collaborative projects, where I've delved into languages like Python, JavaScript, and other relevant frameworks in the industry. My goal is to continue developing my programming skills and make meaningful contributions to the field of software development.",
+    proyectos: "These are the projects I enjoyed creating the most...",
+    informacionContacto: {
+      email: "johndoe@example.com",
+      linkedIn: "LinkedIn URL"
+    },
+    derechos: "© 2024 Acme Inc. All rights reserved.",
+    enlacesLegales: {
+      terminosDeServicio: "Terms of Service",
+      privacidad: "Privacy Policy"
+    }
+  }
+
+};
+function mostrarElementoCuandoVisible(elementoId) {
+    const elemento = document.getElementById(elementoId);
+    function scrollHandler() {
+        const scrollY = window.scrollY;
+        const position_top_elemento = Math.floor( elemento.getBoundingClientRect().top);
+        console.log("posicion " + position_top_elemento);
+        if (scrollY > position_top_elemento - 10) {
+            elemento.style.display = "block";
+            elemento.classList.add("mostrar");
+        } else {
+            elemento.style.display = "none";
+            elemento.classList.remove("mostrar");
+        }
+    }
+    window.addEventListener("scroll", scrollHandler);
+}
+mostrarElementoCuandoVisible("texto_mis_proyectos");
+function mostrar_letras(elementoId) {
+  const elementoMostrar = document.getElementById(elementoId);
+  const palabra = "Joel Martinez";
+  let palabra_mostrar = "";
+  let index_letra = 0;
+  const intervaloMostrar = setInterval(() => {
+    palabra_mostrar += palabra[index_letra];
+    elementoMostrar.textContent = palabra_mostrar;
+    index_letra++;
+    if (palabra === palabra_mostrar) {
+      clearInterval(intervaloMostrar);
+
+      // const intervaloEliminar = setInterval(() => {
+      //   palabra_mostrar = palabra_mostrar.slice(0, -1); // Elimina la última letra
+      //   elementoMostrar.textContent = palabra_mostrar;
+      //   console.log(palabra_mostrar);
+      //   if (palabra_mostrar === "") {
+      //     clearInterval(intervaloEliminar);
+      //     mostrar_letras(elementoId);
+      //   }
+      // }, 150);
+    }
+  }, 100);
+}
+mostrar_letras("texto_nombre")
+
+
+
+
+</script>
+</body>
+</html>
